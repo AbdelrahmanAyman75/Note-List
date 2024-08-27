@@ -8,7 +8,7 @@ export default function Layout() {
     
     <Navepar/>
     <div className='container mt-5'>
-   <Outlet></Outlet>
+    <Outlet> </Outlet>
    </div>
     </>
   )

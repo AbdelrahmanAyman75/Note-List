@@ -21,7 +21,7 @@ export default function Home() {
 
 
 
-  useEffect(()=>{getuserdata()} ,[])
+  
 
   let formik = useFormik({
     initialValues :{
@@ -57,9 +57,8 @@ export default function Home() {
       
     })
     
-  .then ((res)=>{console.log(res);
-
-    getuserdata();
+  .then ((res)=>{
+    getuserdata()
   setNotelenght(res.data.notes.length);
     setallnots(res.data.notes);
 
@@ -68,7 +67,12 @@ export default function Home() {
 
   }
 
- 
+  useEffect(()=>{
+    getuserdata();
+    
+
+  }
+  ,[])
 
 
   return (

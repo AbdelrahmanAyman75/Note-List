@@ -30,7 +30,8 @@ export default function Note({note,getuserdata}) {
       token:`3b8ny__${localStorage.getItem('Usertoken')}`
     }
    })
-   .then((res)=>{console.log(res);
+   .then((res)=>{
+    // console.log(res);
     setupdateNotes()
   })
 

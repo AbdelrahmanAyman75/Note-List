@@ -13,7 +13,7 @@ export default function SignIn() {
   const navigat = useNavigate()
 
   const [isloding , setisloding]=useState(false)
-
+  
   const [ErrorMsg, setErrorMsg]=useState('')
 
     let validtwo = yup.object({
@@ -59,8 +59,6 @@ export default function SignIn() {
 
   return (
     <div>
-      <h1>sign in</h1>
-
       {/* <li className="fixed-top p-3 pe-lg-5 d-lg-flex d-none  ">
         <i className="fa-regular fa-note-sticky text-info fs-2"></i>
         <p className="ps-2 fs-4 fw-bold">Notes</p>
@@ -105,7 +103,7 @@ export default function SignIn() {
                     </button>}
 
                   </form>
-                <Link to={"/"}>
+                <Link to={"/signup"}>
                 
                 <p>Don't Have Account ? Register Now</p>
                 </Link>
