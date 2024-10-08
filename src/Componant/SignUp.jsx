@@ -52,7 +52,7 @@ export default function SignUp() {
     },
 
     onSubmit: async (values) => {
-      console.log(values);
+      // console.log(values);
       setisloding(true);
       try {
         let { data } = await axios.post(
